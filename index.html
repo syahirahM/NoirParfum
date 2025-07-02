@@ -1,0 +1,64 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Noir Parfum | Home</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body class="home-page"> 
+  <header>
+    <div class="logo">NOIR PARFUM</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="center">
+    <h1>Unveil the Essence of Luxury</h1>
+    <p>Fragrances that speak elegance, boldness, and timeless beauty.</p>
+  </main>
+  <div id="clock" class="clock-style"></div>
+
+<div class="login-container">
+  <h2>Login to Noir Parfum</h2>
+  <form>
+    <input type="text" placeholder="Username" required>
+    <input type="password" placeholder="Password" required>
+    <button type="submit">Login</button>
+  </form>
+  <a href="#">Register</a>
+</div>
+</body>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<footer>
+  <div class="footer-socials">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+    © 2025 Noir Parfum | Designed with Elegance
+  </footer>
+ <script>
+  function updateClock() {
+    const now = new Date();
+    let hours = now.getHours();
+    let minutes = now.getMinutes();
+    let seconds = now.getSeconds();
+
+    hours = hours < 10 ? "0" + hours : hours;
+    minutes = minutes < 10 ? "0" + minutes : minutes;
+    seconds = seconds < 10 ? "0" + seconds : seconds;
+
+    const timeString = hours + ":" + minutes + ":" + seconds;
+    document.getElementById("clock").innerHTML = timeString;
+  }
+
+  setInterval(updateClock, 1000); 
+  updateClock(); 
+</script>
+</body>
+</html>

@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Noir Parfum | Contact</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">NOIR PARFUM</div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main class="center">
+    <h1>Contact Us</h1>
+    <p>Address: Lot 88, Jalan Wangi, Kuala Lumpur</p>
+    <p>Phone: +60 12-345 6789</p>
+    <p>Email: noirparfum@gmail.com</p>
+    <p><a href="https://www.instagram.com/nrlaniesya__?igsh=Zjd1YTExaDU3NDF3&utm_source=qr">Instagram</a></p>
+    <p>Business Hours: Mon - Fri, 9am - 6pm</p>
+  </main>
+
+   <div class="contact-form">
+    <form id="contactForm">
+      <input type="text" placeholder="Your Name" required>
+      <input type="email" placeholder="Your Email" required>
+      <textarea placeholder="Your Message" required></textarea>
+      <button type="submit">Send Message</button>
+    </form>
+    <div id="formMessage" class="form-message"></div>
+  </div>
+
+<script>
+    const form = document.getElementById("contactForm");
+    const message = document.getElementById("formMessage");
+
+    form.addEventListener("submit", function(e) {
+      e.preventDefault(); 
+
+      message.textContent = "✅ Thank you! Your message has been sent.";
+      message.style.display = "block";
+
+      form.reset();
+
+      setTimeout(() => {
+        message.style.display = "none";
+      }, 6000);
+    });
+  </script>
+
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<footer>
+  <div class="footer-socials">
+    <h4>Follow Us</h4>
+    <div class="social-icons">
+      <a href="#"><i class="fab fa-facebook-f"></i></a>
+      <a href="#"><i class="fab fa-instagram"></i></a>
+      <a href="#"><i class="fab fa-tiktok"></i></a>
+    </div>
+  </div>
+    © 2025 Noir Parfum | Designed with Elegance
+   
+  </footer>
+</body>
+</html>
